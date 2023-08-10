@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR CODE READER</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <DIV id="coming">
+        COMING SOON
+    </DIV>
+    <style>
+        body{
+            background-color: black;
+        }
+        #coming{
+            text-align: center;
+            margin-top: 20%;
+            font-size: 34px;
+            color: aliceblue;
+        }
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <div class="wrapper">
+        <form action="#">
+            <input type="file" hidden>
+            <img src="qr-code.svg" alt="QR-CODE">
+            <div class="content">
+                <i class="fas fa-cloud-upload"></i>
+                <p>UPLOAD QR CODE TO SCAN</p>
+            </div>
+        </form>
+        <div class="details">
+                <textarea disabled>this is a simple qr code reader</textarea>
+                <div class="buttons">
+                    <button class="close">close</button>
+                    <button class="copy">copy text</button>
+                </div>
+        </div>
+    </div>
+<style>
+   body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #E3F2FD;
+
+   }
+   .wrapper{
+    height: 270px;
+    width: 420px;
+    border-radius: 7px;
+    background-color: blue;
+    padding: 30px 30px 35px;
+   }
+   .wrapper form{
+    height: 225px;
+    background: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border-radius: 7px;
+   }
+   form img{
+    display: none;
+    max-width: 148px;
+   }
+   form .content{
+    /* display: none; */
+   }
+   form .content i{
+    color: blue;
+    font-size: 55px;
+    
+   }
+   form .content p{
+    color: blue;
+    font-size: 16px;
+    margin-top: 15px;
+   }
+   .wrapper .details{
+    opacity: 0;
+    margin-top: 25px;
+    pointer-events: none;
+   }
+   .details textarea{
+    margin-top: 10px;
+    width: 100%;
+    height: 128px;
+    outline: none;
+    background: none;
+    padding: 10px 1px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color:#fff;
+    font-size:18px; 
+   }
+   .details .buttons{
+    display:flex;
+    margin-top: 20px;
+    justify-content: space-between;
+
+   }
+   .buttons button{
+    height: 55px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    color: blue;
+    background: #ffff;
+    border-radius: 5px;
+    width: calc(100% / 2 - 10px);
+   }
+
+</style>
+<script>
+    const wrapper  =document.querySelector(".wrapper"),
+    form  = wrapper.querySelector("form"),
+    fileInp = form.querySelector("input");
+
+    function fetchRequest(formData){
+        fetch("https://api.qrsever.com/v1/read-qr-code/",{
+            method: "POST", body: formData
+        }).then(res => res.json()).then(result =>{
+            wrapper.classList.add("active");
+            console.log(result);
+        });
+    }
+
+    fileInp.addEventListener("change",e=>{
+        let file = e.target.files[0];
+        let formData = new FormData();
+        formData.append("file",file);
+        fetchRequest(formData);
+        
+    });
+
+    form.addEventListener("click",()=>fileInp.click());
+
+</script> -->
+
+</body>
+</html>

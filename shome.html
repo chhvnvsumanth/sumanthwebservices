@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME PAGE</title>
+    <script src="https://kit.fontawesome.com/67c66657c7.js"></script>
+</head>
+<body>
+    
+        <input type="checkbox" id="check">
+        <nav>
+            <div class="icon"><B>AIOW</B></div>
+            <OL>
+                <li><a href="#">home</a></li>
+                 <li><a href="#">feedback</a></li>
+                  <li><a href="#">contect us</a></li>
+                   <li><a href="#">about</a></li>
+            </OL>
+            <label for="check" class="bar">
+                <span class="fas fa-bars" id="bars"></span>
+                <span class="fas fa-times" id="times"></span>
+            </label>
+        </nav>
+        <div id="circle">
+        </div>
+        <style>
+           
+            *{
+                margin: 0%;
+                padding: 0%;
+                box-sizing: border-box;
+    
+            }
+            body{
+                background: #eee;
+                overflow: hidden;
+                background-color: rgb(255, 183, 0);
+                
+            }
+            nav{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                padding:8px 50px;
+                border: 1px solid white;
+                box-shadow: -7px -7px 17px white
+                            7px 7px 17px rgba(70,70,70,0.15);
+                background: rgb(33, 167, 33);
+    
+    
+            }
+            .icon{
+                font-size: 35px;
+                font-weight: 800;
+                cursor: pointer;
+                color:#778ba5;
+                padding: 10px 15px;        
+            }
+            .icon b{
+                color: blue;
+            }
+            ol{
+                display: flex;
+                margin:  auto 0;
+                list-style: none;
+            }
+            ol li{
+                margin: 0 10px;
+            }
+            ol li a{
+                font-size: 20px;
+                color: white;
+                text-transform: capitalize;
+                letter-spacing: 1px;
+                text-decoration: none;
+                padding: 8px 12px;
+               
+                border-radius: 10px;
+                 box-shadow: -7px -7px 17px rgb(254, 182, 0)
+                            ,7px 7px 17px rgba(70,70,70,0.15);
+            }
+            ol li:hover a{
+                color: #eee;
+                background: blue;
+            }
+            input[type="checkbox"]{
+                display: none;
+            }
+            .bar{
+                position: relative;
+                display: none;
+    
+            }
+            .bar span{
+                color: blue;
+                height: 65px;
+                width: 65px;
+                line-height: 65px;
+                font-size: 35px;
+                text-align: center;
+                border: 1px solid white;
+                border-radius: 10px;
+                 box-shadow: -7px -7px 17px white
+                            ,7px 7px 17px rgba(70,70,70,0.15);
+            }
+            @media screen and (max-width:1100px){
+                nav{
+                    display: block;
+                    padding: 0;
+                   
+                }
+                .icon{
+                    display: inline-block;
+                    margin: 0px 0px;
+                    margin-left: 45px;
+                }
+                ol{
+                    display:block;
+                    width:100%;
+    
+                }
+                ol li{
+                    position: relative;
+                    margin:40px 0;
+                    display: none;
+                    
+                }
+                ol li a{
+                    width: 90%;
+                    text-align: center;
+                    padding: 30px;
+                    font-size: 28px;
+                    display: block;
+                    border-radius: 30px;
+                    left:50%;
+                    transform: translateX(-50%);
+                    position: relative;
+    
+                }
+                .bar{
+                    display:block;
+                    position: absolute;
+                    top:4px;
+                    right: 40px;
+                    cursor: pointer;
+                }
+                .bar #times{
+                    color:red;
+                    display: none;
+                }
+                #check:checked~nav ol li{
+                    display: block;
+                }
+                #check:checked~nav .bar #times{
+                    display: block;
+                }
+                #check:checked~nav .bar #bars{
+                    display: none;
+                }
+                ol li a{
+                    width: 30%;
+                    font-size: 21px;
+                    background-color: #778ba5;
+                }
+               
+
+            }
+        </style>
+    </body>
+    
+</html>

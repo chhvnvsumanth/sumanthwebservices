@@ -1,0 +1,285 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color:rgb(37, 37, 133);
+    color: aliceblue;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    
+    
+    
+    }
+button{
+
+    font-size: 18px;
+    color: #15f4ee;
+    background-color: transparent;
+    border: 2px solid #15f4ee;
+    border-radius: 100px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    padding: 6px;
+    transform:  skew(345deg);
+    transition: 0.5s;
+    margin-top:10px;
+
+}
+button:hover{
+    box-shadow: 0 5px 8px 0 #15f4ee inset,0 5px 8px 0 #15f4ee,0 5px 8px 0 #15f4ee;
+}
+#social{
+    border: 2px solid white;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10%;
+    margin: 3rem;
+    background-color: rgb(15, 11, 120);
+    /* background-image: url("blue-high-tech-futuristic-cyberspace-technology-background-free-vector.jpg");
+    background-repeat: repeat;
+    background-size: ;  */
+   
+
+
+    
+
+}
+#center{
+    text-align: center;
+    margin: 20px;
+}
+#left{
+    text-align: left;
+    margin: 20px;
+    margin-left: 1px;
+
+}
+#right{
+    text-align: right;
+    margin: 25px;
+    margin-right: 1px;
+}
+a{
+    
+    text-decoration: none;
+    width:250px;
+    height:90px;
+    margin: 0%;
+    border: 0.2rem solid #15f4ee;
+    color: azure;
+    padding: 5px;
+    border-radius: 40px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color:  #15f4ee;
+}
+a:hover{
+    box-shadow: 0 5px 8px 0 #15f4ee inset,0 5px 8px 0 #15f4ee,0 5px 8px 0 #15f4ee;
+}
+@media (max-width:750px){
+    body{
+        margin: 0;
+        padding: 0;
+        background-color:rgb(37, 37, 133);
+        color: aliceblue;
+        
+        
+        
+        
+        }
+    button{
+    
+        font-size: 18px;
+        color: #15f4ee;
+        background-color: transparent;
+        border: 2px solid #15f4ee;
+        border-radius: 100px;
+        letter-spacing: 1px;
+        cursor: pointer;
+        padding: 6px;
+        transform:  skew(345deg);
+        transition: 0.5s;
+        margin-top:10px;
+    
+    }
+    button:hover{
+        box-shadow: 0 5px 8px 0 #15f4ee inset,0 5px 8px 0 #15f4ee,0 5px 8px 0 #15f4ee;
+    }
+    #social{
+        border: 2px solid white;
+        padding: 15px;
+        margin-top: 10px;
+        border-radius: 10%;
+        background-color: rgb(15, 11, 120);
+        /* background-image: url("blue-high-tech-futuristic-cyberspace-technology-background-free-vector.jpg");
+        background-repeat: repeat;
+        background-size: ;  */
+        
+        
+    }
+    #center{
+        text-align: center;
+        margin: 20px;
+         margin-top: 20px;
+    }
+    #left{
+        text-align: left;
+        margin: 20px;
+        margin-left: 5px;
+        margin-top: 20px;
+    
+    }
+    #right{
+        text-align: right;
+        margin: 20px;
+        margin-right:5px;
+        margin-top: 20px;
+    }
+    a{
+        
+        text-decoration: none;
+        width:200px;
+        height:90px;
+        margin: 0%;
+        border: 0.2rem solid #15f4ee;
+        color: azure;
+        padding: 5px;
+        border-radius: 40px;
+        font-size: 20px;
+        text-transform: uppercase;
+        color:  #15f4ee;
+       
+    }
+    a:hover{
+        box-shadow: 0 5px 8px 0 #15f4ee inset,0 5px 8px 0 #15f4ee,0 5px 8px 0 #15f4ee;
+    }
+}
+@media (max-width:550px){
+    body{
+        margin: 0;
+        padding: 0;
+        background-color:rgb(37, 37, 133);
+        color: aliceblue;
+        
+        
+        
+        
+        }
+    button{
+    
+        font-size: 18px;
+        color: #15f4ee;
+        background-color: transparent;
+        border: 2px solid #15f4ee;
+        border-radius: 100px;
+        letter-spacing: 1px;
+        cursor: pointer;
+        padding: 6px;
+        transform:  skew(345deg);
+        transition: 0.5s;
+        margin-top:10px;
+    
+    }
+    button:hover{
+        box-shadow: 0 5px 8px 0 #15f4ee inset,0 5px 8px 0 #15f4ee,0 5px 8px 0 #15f4ee;
+    }
+    #social{
+        border: 2px solid white;
+        padding: 5px;
+        margin-top: 10px;
+        border-radius: 10%;
+        background-color: rgb(15, 11, 120);
+        /* background-image: url("blue-high-tech-futuristic-cyberspace-technology-background-free-vector.jpg");
+        background-repeat: repeat;
+        background-size: ;  */
+        
+       
+       
+        
+        
+    }
+     #center #left #right{
+       
+        text-align: center;
+        margin: 20px;
+        margin-top: 20px;
+        margin-inline: calc(30%);
+    } 
+    #left{
+        text-align: center;
+        margin: 20px;
+        margin-top: 20px;
+        margin-inline: calc(30%);
+
+    }
+     #right{
+        text-align: center;
+        margin: 20px;
+        margin-top: 20px;
+        margin-inline: calc(30%);
+    } 
+    a{
+        
+        text-decoration: none;
+        width:145px;
+        height:40px;
+        display: block;
+        justify-content: center;
+        margin-top: 10px;
+        border: 0.2rem solid #15f4ee;
+        color: azure;
+        padding: 5px;
+        border-radius: 40px;
+        font-size: 20px;
+        text-transform: uppercase;
+        color:  #15f4ee;
+    }
+    a:hover{
+        box-shadow: 0 5px 8px 0 #15f4ee inset,0 5px 8px 0 #15f4ee,0 5px 8px 0 #15f4ee;
+    }
+}
+@media (max-width:550px){
+    #left{
+        text-align: center;
+        margin: 20px;
+        margin-top: 20px;
+        margin-inline: calc(20%);
+
+    }
+     #right{
+        text-align: center;
+        margin: 20px;
+        margin-top: 20px;
+        margin-inline: calc(20%);
+    } 
+}
+@media (max-width:550px){
+    #left{
+        text-align: center;
+        margin: 20px;
+        margin-top: 20px;
+        margin-inline: calc(21%);
+
+    }
+     #right{
+        text-align: center;
+        margin: 20px;
+        margin-top: 20px;
+        margin-inline: calc(21%);
+    } 
+}
+@media (max-width:299px){
+    #left{
+        text-align: center;
+        margin: 20px;
+        margin-top: 20px;
+        margin-inline: calc(6%);
+
+    }
+     #right{
+        text-align: center;
+        margin: 20px;
+        margin-top: 20px;
+        margin-inline: calc(6%);
+    } 
+}

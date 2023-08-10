@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR GENERATOR</title>
+    
+</head>
+<body>
+    <img src="logi" alt="TO GENERATE QRCODE WRITE  TEXT">
+    <br>
+    <input type="text">
+    <br>
+    <button id="generate">generate</button>
+    <button id="download">download</button>
+    <br>=
+    <style>
+        body{
+            text-align: center;
+            background-color: black;
+        }
+        img{
+            width: 13%;
+            height: 10%;
+            color: blueviolet;
+        }
+        input{
+            width: 21%;
+            font-size: 28px;
+
+            margin-top: 2%;
+            background-color: rgb(110, 110, 110);
+        }
+        button{
+           font-size: medium;
+            margin-top: 1%;
+        }
+        #generate{
+            color: white;
+            background-color: rgb(71, 44, 44);
+            width: 10%;
+            
+
+        }
+        #download{
+            color: white;
+            background-color: rgb(71, 44, 44);
+            width: 10%;
+
+        }
+        @media screen and (max-width:650px){
+            input{
+            width: 69%;
+            font-size: 30px;
+
+            margin-top: 2%;
+            background-color: rgb(110, 110, 110);
+        }
+        button{
+           font-size: medium;
+            margin-top: 3%;
+        }
+        #generate{
+            color: white;
+            background-color: rgb(71, 44, 44);
+            width: 35%;
+            
+
+        }
+        #download{
+            color: white;
+            background-color: rgb(71, 44, 44);
+            width: 35%;
+
+        }
+        img{
+            width: 35%;
+            height: 35%;
+            color: blueviolet;
+        }
+        }
+    </style>
+<script>
+    const input = document.querySelector("input");
+    const qrimage = document.querySelector("img");
+    const generateBtn = document.querySelector("#generate");
+    const downloadBtn = document.querySelector("#download");
+
+    generateBtn.addEventListener("click", () => {
+        const qrCode = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${input.value}`;
+        qrimage.src = qrCode;
+    });
+    downloadBtn.addEventListener("click",  async () => {
+        const response = await fetch(qrimage.src);
+        const blob = await response.blob();
+        const downloadLink = document.createElement("a");
+        downloadLink.href = URL.createObjectURL(blob);
+        downloadLink.download = "qrcode.jpg";
+        downloadLink.click();
+
+
+    });
+
+</script>
+    
+
+</body>
+</html>
