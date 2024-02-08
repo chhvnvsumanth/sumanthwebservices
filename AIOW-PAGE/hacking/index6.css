@@ -283,3 +283,47 @@ a:hover{
         margin-inline: calc(6%);
     } 
 }
+#welcome{
+    color:transparent;
+    text-transform: uppercase;
+    font-size: 50px;
+    background-image: linear-gradient(to left,green,aliceblue);
+    -webkit-background-clip: text;
+    animation: animate 9s linear infinite;
+    -webkit-background-size: 45px;
+    padding-bottom: 5px;
+    
+    }
+    @keyframes animate{
+        0%{
+            background-position: 0 100%;
+        }
+        50%{
+            background-position: 100% 0;
+        }
+        100%{
+            background-position: 0 100%;
+        }
+    }
+    #elcome{
+        /* color:transparent; */
+        text-transform: uppercase;
+        font-size: 20px;
+        background-image: linear-gradient(to left rgb(255, 89, 0),aliceblue);
+        -webkit-background-clip: text;
+        animation: animate 9s linear infinite;
+        -webkit-background-size: 15px;
+        padding-bottom: 5px;
+        
+        }
+        @keyframes animate{
+            0%{
+                background-position: 0 100%;
+            }
+            50%{
+                background-position: 100% 0;
+            }
+            100%{
+                background-position: 0 100%;
+            }
+        }
