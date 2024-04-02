@@ -250,10 +250,10 @@ section{
 .home-img img{
     position: absolute;
     bottom: 0;
-    right: 10vw;
+    right: 8vw;
     
     pointer-events: none;
-    width: 13vw;
+    width: 21vw;
 }
 span{
     color: var(--main-color);
@@ -262,11 +262,11 @@ span{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 4rem;
+    gap: 3rem;
    
 }
 .about-img img{
-    width: 11vw;
+    width: 40vw;
 }
 .heading{
     font-size: 4.5rem;
